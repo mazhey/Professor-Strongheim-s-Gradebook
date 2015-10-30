@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert InforSmation</title>
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+
+</head>
+<body>
+
+<div class="container">
+<div class="panel panel-default">
+<div class="panel-heading" style="font-weight: bold;">Student Grade Form</div>
+<div class="panel-body">
+<form action="AddData" method="post">
+<div>
+<label for="inputGrade" >Student ID:</label> 
+<input type="text" name="studentid" id="studentid" class="form-control"
+			placeholder="Student ID" required>
+			</div>
+<div>
+<label for="inputGrade" >Assignment Name:</label> 
+<input type="text" name="assignmentname" id="assignmentname" class="form-control"
+			placeholder="Assignment Name" required>
+			</div>
+<div>
+	<br>
+	<label for="inputGrade" >Assignment Type:</label><br>
+	<div class="panel panel-default">
+	<div class="panel-body">
+
+
+  <input type="radio" name="assignmenttype" id="Homework" value="Homework">
+    <label for="Homework">Homework</label><br>
+    
+  
+  <input type="radio" name="assignmenttype" id="Quiz" value="Quiz">
+  <label for="Quiz">Quiz</label><br>
+ 
+  <input type="radio" name="assignmenttype" id="Test" value="Test">
+  <label for="Test">Test</label><br>
+  
+  
+  <input type="radio" name="assignmenttype" id="Project" value="Project">
+  <label for="Project">Project</label><br>
+		</div>	
+		</div>
+		</div>
+		
+		
+<div>
+<label for="inputGrade" >Date:</label> <input
+			type="text" name="date" id="date" class="form-control"
+			placeholder="Date" required>
+		</div> 	
+<div>
+<label for="inputGrade" >Grade:</label> <input
+			type="text" name="grade" id="grade" class="form-control"
+			placeholder="Grade" required>
+		</div> 	
+		<br>
+<input type="submit" id="submit" value="Submit">
+  
+</form> 
+</div>
+</div>
+</div>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		<script
+			src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<!-- Include all compiled plugins (below), or include individual files as needed -->
+		<script
+			src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"
+			integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ=="
+			crossorigin="anonymous"></script>
+</body>
+</html>
